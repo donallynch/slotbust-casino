@@ -1,0 +1,147 @@
+body {
+	font-family: 'Tahoma';
+	font-size: 0.9em;
+}
+#terms, #more, #join, #back, #join2 {
+	background-color: lightgray;
+	color: black;
+	padding: 6px;
+	border: none;
+	width: 30%;
+	float: right;
+	margin-right: 10px;
+	font-weight: bold;
+}
+#more {
+	width: 30%;
+}
+#terms:hover {
+	background-image:none;
+	background: transparent url("../images/flip_icon_24X24.png") no-repeat;
+}
+#terms:hover, #more:hover, #join:hover, #back:hover, #join2:hover {
+	background-color: #DC1700;
+	color: white;
+	cursor: pointer;
+}
+#back {
+	background: transparent url("../images/flip_icon_24X24.png") no-repeat;
+	background-color: lightgray;
+	margin-right: 10px;
+}
+#back, #join2 {
+	width: 20%;
+	float: left;
+}
+input[type="button"] {
+	width: 95%;
+}
+.frontPanel {
+	background-color: #ffffff; 
+	width: 600px;
+	height: 200px;
+	border: 1px solid #E6E7E9;
+}
+.pic-holder {
+	height: 200px;
+	width: 200px;
+	float: left; 
+	background: #ffffff url("../images/casino-small.jpg") no-repeat center center;
+}
+.content-holder {
+	width: 400px;
+	float: left;
+	background-color: #ffffff;
+}
+.backPanel {
+	background-color: #ffffff; 
+	width: 600px;
+	border: 1px solid #E6E7E9;  
+}
+.terms-container {
+	width: 600px;
+	float: left;
+	background-color: #ffffff;
+}
+.row {
+	background-color: #ffffff;
+	margin: 8px;
+}
+.button-row {
+	float: left;
+	width: 33%;
+}
+.heavy {
+	font-weight: bold;
+}
+.highlighted {
+	color: #22768A;
+}
+.heavy, .highlighted {
+	font-size: 1.40em;
+}
+.clear {
+	clear: both;
+}
+.new {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 501px;
+	background: transparent url("../images/new2.png") no-repeat right top;
+}
+.terms-small-row {
+	height: 25px;
+}
+.terms-middle {
+	height: 120px; 
+	overflow: hidden;
+}
+#wrap {
+    float: left;
+    position: relative;
+    left: 50%;
+    height: 200px;
+}
+#card {
+	width: 600px;
+	float: left;
+    position: relative;
+    left: -50%;
+}
+
+/* SMALL SCREENS: Responsive break points */
+@media screen and (max-width: 700px) {
+  	.pic-holder {
+		width: 580px;
+		height: 180px;
+		margin: 10px;
+		background: #ffffff url("../images/casino-big.jpg") no-repeat center center;
+	}
+	.content-holder {
+		width: 600px;
+	}
+	#card, #wrap {
+		height: 430px;
+	}
+	.terms-middle {
+		height: 350px; 
+		overflow: scroll;
+	}
+	#join {
+		width: 100%;
+		margin-bottom: 10px;
+		float: left;
+	}
+	#terms, #more {
+		width: 49%;
+		float: right;
+		margin: 0px;
+	}
+	#more {
+		float: right;
+	}
+	#terms {
+		float: left;
+	}
+}
